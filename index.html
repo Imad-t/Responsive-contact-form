@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Sora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <img src="./assets/contact-form-icon.svg" alt="icon" class="icon">
+
+        <div class="innerContainer">
+            <h1 class="heading">Interested in our business pricing?</h1>
+            <p class="suggestion">Fill out the form to view details and we’ll contact you as soon as possible.</p>
+            <form>
+                <div class="row">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" class="input" type="text" placeholder="Ethan Johnson">
+                    </div>
+                    <div class="field">
+                        <label for="email">Company Email</label>
+                        <input id="email" class="input" type="email" placeholder="ethan@johnson.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="size">Company Size</label>
+                        <select class="input" name="companySize" id="size">
+                            <option value="1">1-50</option>
+                            <option value="2">50-100</option>
+                            <option value="3">100-200</option>
+                            <option value="4">200-500</option>
+                            <option value="5">>500</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <select class="input" name="subject" id="subject">
+                            <option value="1">option1</option>
+                            <option value="2">option2</option>
+                            <option value="3">option3</option>
+                            <option value="4">option4</option>
+                            <option value="5">option5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="40" rows="10"></textarea>
+                </div>
+                <button>Contact Sales</button>    
+                
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

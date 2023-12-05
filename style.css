@@ -1,0 +1,179 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDD5E0;
+    margin: 0;
+}
+
+.container {
+    background-image: url('./assets/bg-image.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: screen;
+    padding-bottom: 80px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+*/
+}
+
+.icon {
+    
+    text-align: center;
+    padding: 20px;
+}
+
+.innerContainer {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+   
+}
+
+.heading {
+    font-size: 64px;
+    text-align: center;
+    margin: 0;
+}
+.suggestion {
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+form {
+    padding: 40px;
+    background: linear-gradient(20deg, rgba(255, 255, 255, 0.15),rgba(255, 225, 225, 0.15));
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+}
+.input{
+    color: #111729;
+    font-weight: 600;
+    height: 64px;
+    border-radius: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #F8FAFC;
+    outline: none;
+    border: none;
+
+}
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url("./assets/Expand_down.svg");
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 50%;
+}
+
+textarea{
+    width: 100%;
+    color: #111729;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px;
+    overflow:hidden;
+    background-color: #F8FAFC;
+    outline: none;
+    border: none;
+
+}
+
+button {
+    width: 100%;
+    height: 64px;
+    border-radius: 20px;
+    background-color: #F8FAFC;
+    color: #4036A9;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+
+textarea:focus, input:focus,select:focus{
+    outline: none;
+    border: none;
+}
+::placeholder {
+    color: #CDD5E0;
+  }
+
+
+@media screen and (max-width: 1024px) {
+    .icon {
+        height: 36px;
+        width: 72px;
+    }
+    .container{
+        height: 100%;
+    }
+    .heading{
+        font-size: 48px;
+    }
+    .suggestion{
+        font-size: 24px;
+    }
+}
+@media screen and (max-height: 720px) {
+    .container{
+        display: block;
+        height: 150%;
+    }
+}
+
+@media screen and (max-width:640px){
+.innerContainer {
+width: 80%;
+}
+    form{
+        padding: 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .suggestion{
+        font-size: 12px;
+    }
+    .input{
+        height: 40px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    label {
+        font-size: 10px;
+    }
+    
+}
